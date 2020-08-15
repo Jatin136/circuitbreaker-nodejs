@@ -1,6 +1,6 @@
 # CircuitBreaker implementation using opossum
 
-Repository contains the CircuitBreaker implementation using opossum for making a rest call to any api using axios library.
+Repository contains the CircuitBreaker implementation in nodejs using opossum package for making a rest call to any api using axios library.
 
 > Repository also contains an example folder to include it in your code.
 
