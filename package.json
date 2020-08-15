@@ -1,8 +1,8 @@
 {
-  "name": "circuit-breaker-nodejs",
+  "name": "circuitbreaker-nodejs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "circuit breaker pattern in nodejs",
+  "main": "proxy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

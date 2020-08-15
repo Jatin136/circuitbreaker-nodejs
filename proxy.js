@@ -39,6 +39,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 exports.__esModule = true;
+exports.Proxy = void 0;
 var https_1 = __importDefault(require("https"));
 var rest_1 = require("./rest");
 var Proxy = (function () {

@@ -1,4 +1,4 @@
-import { Proxy, ProxyParams } from "../proxy";
+import { Proxy, ProxyParameters } from "../proxy";
 
 const circuitBreakerOptions = {
     timeout: 3000, // If our function takes longer than 3 seconds, trigger a failure
@@ -11,7 +11,7 @@ const circuitBreakerOptions = {
 
 (async () => {
 
-    let restParams: ProxyParams = {
+    let restParams: ProxyParameters = {
         baseUrl: 'htts:/jsonplaceholder.typicode.com',
         method: 'get',
         uri: '/todos/1',

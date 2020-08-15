@@ -8,12 +8,14 @@ import { Rest } from "./rest";
     * make a request to url
     * @param baseurl base url
     * @param method type of http methods
-    * @param isMockApiCall set it to true for calling mocked api and false to make a actual api call
+    * @param isMockCall set it to true for calling mocked api and false to make a actual api call
     * @param uri resource to connect
     * @param header header information
     * @param breakerOptions : circuit breaker options
+    * @param certificateBuffer: certificate in buffer format
+    * @param keyBuffer: certificate key in buffer format
 */
-export type ProxyParams = {
+export type ProxyParameters = {
     baseUrl: string,
     method: axios.Method,
     uri: string,
@@ -26,9 +28,9 @@ export type ProxyParams = {
 
 export class Proxy {
 
-    private params: ProxyParams;
+    private params: ProxyParameters;
 
-    constructor(private InputParams: ProxyParams) {
+    constructor(private InputParams: ProxyParameters) {
         this.params = this.InputParams;
     }
 
